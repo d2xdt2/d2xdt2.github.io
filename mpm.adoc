@@ -1,0 +1,55 @@
+== Miracle Product Manager
+
+image::mpm/mpm.png[]
+
+
+=== !
+Data migration fra MySQL til MongoDB
+[source, javascript]
+----
+include::openall_dumper/scripts/openall_dumper.js[]
+----
+
+
+=== !
+Reproducering af eksiterende tilbud PoC
+[source, typescript]
+----
+include::mpm_logic/src/gen_tilbud_1.ts[]
+----
+
+
+=== !
+Data validering på database laget
+[source, typescript]
+----
+include::mpm_logic/src/modules/dbSchema.ts[]
+----
+
+
+=== !
+State functions og pure functions
+[source, typescript,linenums,highlight='|10..11,19..20']
+----
+include::mpm_logic/src/modules/expandRedhatOffer.ts[]
+----
+
+
+//=== !
+//setPrice.ts
+//[source, typescript]
+//----
+//include::mpm_logic/src/modules/setPrice.ts[]
+//----
+
+=== MailGun PoC
+
+image::mpm/mailgun.png[]
+
+=== !
+NextJS med React-Bootstrap
+[source, tsx]
+----
+include::mailgun.tsx[]
+----
+

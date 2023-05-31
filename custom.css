@@ -1,0 +1,13 @@
+.reveal pre {
+  line-height: 0.6em;
+}
+
+.reveal pre code {
+  max-height: 600px;
+  font-size: 14px;
+}
+
+.reveal smaller-text {
+  font-size: 110px !important;
+}
+

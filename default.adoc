@@ -1,0 +1,33 @@
+== Citat fra mit CV
+
+What inspires me
+
+* Problems with no obvious solutions.
+* Complex problems that are difficult to break up.
+
+
+== Mit default projekt setup
+
+* VSCode
+* TypeScript 4.9
+* NodeMon
+* ESLint (AirBnB style guide)
+* Prettier
+* Vitest (unit testing)
+* Husky (som git pre-commit hook)
+
+[source, json]
+----
+npm run test && npm run prettier-format && npm run lint
+----
+
+
+== Min definition for produktion
+
+* Automated tested (unit og E2E)
+* Automated deployed
+* Documented
+* Backup / recovery
+* Log monitoring
+* Service monitoring
+

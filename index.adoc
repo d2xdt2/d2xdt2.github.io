@@ -1,0 +1,30 @@
+:revealjs_theme: moon
+
+:customcss: custom.css
+
+:source-highlighter: highlightjs
+:highlightjs-languages: javascript, typescript, toml, json
+//:highlightjs-theme: a11y-dark.css
+
+// https://docs.asciidoctor.org/reveal.js-converter/latest/converter/revealjs-options/
+
+:revealjs_hash: true
+
+= 3 eksempler
+Hvordan jeg ser på software udvikling
+
+include::default/default.adoc[]
+include::ep/ep.adoc[]
+include::la/la.adoc[]
+include::mpm/mpm.adoc[]
+
+== Min vision
+
+* Exceptionel brugeroplevelse
+* Solid arkitektur og kode base
+* Automation der fører til skalering
+
+
+
+// https://docs.asciidoctor.org/asciidoc/latest/directives/include/
+
