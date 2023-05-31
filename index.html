@@ -968,33 +968,6 @@ module.exports = async (probeFile, checkStates) =&gt; {
     await delay(probeFile.Check_Interval);
     timePassed += probeFile.Check_Interval;
   };
-};</code></pre></div></div></div></section><section><div class="slide-content"><div class="paragraph"><p>Return function reference</p></div>
-<div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-javascript hljs" data-noescape="true" data-lang="javascript">const getStatusCode = require('./getStatusCode');
-const getString = require('./getString');
-const getSecureString = require('./getSecureString');
-const getHttpsCertificate = require('./getHttpsCertificate');
-
-module.exports = (probeFile) =&gt; {
-  function selectFunction(probeFile) {
-    switch (probeFile['Check_Type']) {
-      case 1:
-        return getStatusCode;
-        break;
-      case 2:
-        return getString;
-        break;
-      case 3:
-        return getSecureString;
-        break;
-      case 4:
-        return getHttpsCertificate;
-        break;
-      default:
-        throw new Error(`Ikke gyldig Check_Type i probefil. ${probeFile['Check_Type']} in ${probeFile['Filename']}`);
-    };
-  };
-  // returns a reference to one of the get-functions
-  return selectFunction(probeFile);
 };</code></pre></div></div></div></section></section>
 <section><section id="_logalert"><h2>Logalert</h2><div class="slide-content"><div class="imageblock"><img src="la/la.png" alt="la"></div></div></section><section><div class="slide-content"><div class="paragraph"><p>Eksempel på alertfil</p></div>
 <div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-toml hljs" data-noescape="true" data-lang="toml">Udv_Key = "osm2_services_osm2_angivelse_backend_003"
